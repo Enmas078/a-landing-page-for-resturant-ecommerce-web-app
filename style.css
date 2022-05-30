@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ min-height: 100vw;
+}
+img{
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+.order{
+  border-radius: 30px;
+  background: royalblue;
+  color: white;
+  font-weight: 400;
+  padding: 2px;
+  font-size: 10px;
+  text-align: center;
+}
+.container{
+  margin-top: 10px;
+  display: flex;
+  height: 50px;
+}
+.listitems{
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-left: 340px;
+  
+}
+.listitems li{
+  margin-left: 15px;
+}
+.dropdownMenu{
+  float: right;
+  overflow: hidden;
+}
+.dropItem{
+  display: none;
+  position: absolute;
+}
+.dropItem a{
+  display: block;
+  text-decoration: none;
+  font-family: 800;
+  color: purple;
+}
+.dropdownMenu:hover .dropItem{
+  display: block;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+.section{
+  margin-top: 10px;
+  height: 95%;
+ background:
+ url("https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?cs=srgb&dl=pexels-daria-shevtsova-704569.jpg&fm=jpg"),
+url("https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1095550.jpg&fm=jpg"),
+url("https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1095550.jpg&fm=jpg");
+background-size: 50% 50%;
+background-position: right bottom, right top;
+background-repeat: repeat, no-repeat;
+  
+}
+.content{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 800;
+}
+p{
+  color: white;
+  font-weight: bold;
+}
+.btn{
+  border-radius: 30px;
+  background-color: green;
+  font-size: 20px;
+  padding: 5px;
+  color:white;
+}
+@media (max-width: 412px){
+  .container{
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  img{
+    height: 8px;
+    width: 8px;
+    margin-left: 5px;
+  }
+  .listitems {
+    margin-left: 100px;
+    font-size: 10px;
+  }
+  .listitems li{
+    margin-left: 7.5px;
+  }
+  .order{
+    border-radius: 10px;
+    font-size: 3px;
+  }
+  h1{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .btn{
+    font-size: 10px;
+  }
+}
